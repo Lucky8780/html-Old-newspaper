@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #EFE4C3;  /* Aged parchment color */
+    color: #3B2F2F;  /* Dark brown for text */
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 5px;
+    background: #EFE4C3;
+    border-bottom: 2px solid #D9C49E;
+    gap: 5px;
+}
+
+header h1 {
+    font-family: 'chomsky', 'Old English Text MT', serif;
+    font-size: 72px;
+    margin: 0;
+    color: #3B2F2F;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+header p {
+    margin: 3px 0;
+    font-family: 'EB Garamond', 'Georgia', serif;
+    font-size: 1rem;
+    color: #3B2F2F;
+}
+
+.header-side-article {
+    flex: 1;
+    max-width: 300px;
+    font-size: 0.9rem;
+    padding: 5px;
+    border: 1px solid #D9C49E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-center {
+    flex: 2;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #D9C49E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.header-side-article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #D9C49E;
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+article {
+    background: #EFE4C3;
+    padding: 8px;
+    border: 1px solid #D9C49E;
+    box-shadow: 2px 2px 6px rgba(167, 148, 106, 0.2);
+}
+
+article h2 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #3B2F2F;
+    border-bottom: 1px solid #D9C49E;
+    padding-bottom: 5px;
+}
+
+/* Main Column */
+.main-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main-column article {
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-column article:last-child {
+    margin-bottom: 0;
+}
+
+.main-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+/* Right Column */
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.right-column article {
+    flex: 1;
+    margin: 0;
+    min-height: 0;
+}
+
+aside article {
+    background: #FAEBD7;  /* Antique white */
+    padding: 8px;
+    border: 1px solid #EDE5C2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 5px;
+    background: #D9C49E;  /* Darker sepia */
+    color: #3B2F2F;
+    font-size: 0.9rem;
+    border-top: 2px solid #C4B08C;
+}
+
+footer p {
+    margin: 3px 0;
+    line-height: 1.2;
+}
+
+/* Weather Report Styling */
+.weather-report {
+    background: #E8DDB5 !important;  /* Slightly different shade */
+    border-top: 2px solid #D9C49E !important;
+}
+
+.weather-report h2 {
+    color: #3B2F2F;
+    border-bottom: 1px solid #D9C49E;
+}
+
+.weather-report p {
+    margin: 5px 0;
+}
+
+.weather-report strong {
+    color: #4D4D4D;
+}
+
+.weather-report em {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Advertisement Styling */
+.right-column article:nth-child(2) h2 {
+    font-family: 'Cinzel', 'Playfair Display', serif;
+    font-size: 26px;
+    text-align: center;
+    color: #3B2F2F;
+}
+
+/* Add Google Fonts link to HTML head */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:wght@400;700&family=EB+Garamond:wght@400;600&family=Cinzel:wght@400;700&display=swap');
